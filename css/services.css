@@ -1,0 +1,48 @@
+.services {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 64%;
+}
+
+div[class^="block"] {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+
+  height: 268px;
+  width: 595px;
+  
+  box-shadow: inset 400px 0px 200px rgb(255, 255, 255), 0px 4px 10px rgba(0, 0, 0, 0.25);  
+}
+
+div[class^="block"] p {
+  margin-left: 50px;
+}
+.block1 {
+  background: url(../img/windows.jpg) no-repeat;
+}
+.block2 {
+  background: url(../img/houme.jpg);
+}
+.block3 {
+  background: url(../img/balcony.jpg);
+}
+.block4 {
+  background: url(../img/office.jpg);
+}
+.content-block {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+
+  width: 100%;
+}
+.row-block {
+  display: flex;
+  align-items: center;
+}
+.row-block img {
+  margin: 0 20px 0 50px;
+}
