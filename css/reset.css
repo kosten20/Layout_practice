@@ -100,4 +100,8 @@ label {
 legend {
 	display: block;
 }
+d
+summary {
 
+  cursor: pointer;
+}

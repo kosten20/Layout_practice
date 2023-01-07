@@ -3,19 +3,26 @@
   <head>
     <meta charset="UTF-8" />
     <title>Windows_haus</title>
-    <link rel="stylesheet" href="css/reset.css" media="all">
-    <link rel="stylesheet" href="css/header.css" media="all">
-    <link rel="stylesheet" href="css/services.css" media="all">
-    <link rel="stylesheet" href="css/style.css" media="all">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-
+    <link rel="stylesheet" href="css/reset.css" media="all" />
+    <link rel="stylesheet" href="css/header.css" media="all" />
+    <link rel="stylesheet" href="css/prewiew.css" media="all" />
+    <link rel="stylesheet" href="css/services.css" media="all" />
+    <link rel="stylesheet" href="css/company.css" media="all" />
+    <link rel="stylesheet" href="css/portfolio.css" media="all" />
+    <link rel="stylesheet" href="css/QA.css" media="all" />
+    <link rel="stylesheet" href="css/footer.css" media="all" />
+    <link rel="stylesheet" href="css/style.css" media="all" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <header>
       <div class="container">
-        <img src="img/logo.svg" alt="">
+        <img src="img/logo.svg" alt="" />
         <nav>
           <ul>
             <li><a href="/">Услуги</a></li>
@@ -27,46 +34,225 @@
           </ul>
         </nav>
         <div class="btn">
-          <button id="btn1"><img src="img/liner.svg" alt="logo">Заявка на замер</button>
-          <button id="btn2"><img src="img/calc.svg" alt="logo">Заказать расчет</button>
+          <button id="btn1">
+            <img src="img/liner.svg" alt="logo" />Заявка на замер
+          </button>
+          <button id="btn2">
+            <img src="img/calc.svg" alt="logo" />Заказать расчет
+          </button>
         </div>
-
+      </div>
     </header>
     <main>
+      <section class="prewiew">
+        <div class="about">
+          <h1>
+            <span class="noh">Окна Хаус -</span>
+            Профессиональный&nbsp;подход к остеклению
+          </h1>
+          <div class="about-block-1">
+            <div class="about-block">
+              <img src="img/prewiew-windows.svg" alt="logo" />
+              <p>
+                Современные окна и&nbsp;балконные конструкции по доступным ценам
+              </p>
+            </div>
+            <div class="about-block">
+              <img src="img/prewiew-hands.svg" alt="logo" />
+              <p>Квалифицированный подход к решению задач любой сложности</p>
+            </div>
+            <div class="about-block">
+              <img src="img/prewiew-list.svg" alt="logo" />
+              <p>Гарантия высочайшего&nbsp;качества нашей продукции</p>
+            </div>
+          </div>
+        </div>
+        <div class="form">
+          <h2>Вызвать замершика на дом</h2>
+          <form action="" id="prewiew-form">
+            <input type="text" placeholder="Представьтесь, пожалуйста" />
+            <input type="text" placeholder="Номер телефона" />
+            <input type="text" placeholder="E-mail" />
+            <input id="form-check" type="checkbox" name="" />
+            <label for="form-check">
+              Согласен на обработку персональных данных в&nbsp;соответствии с
+              <a href="/">политикой конфиденциальности</a>
+            </label>
+          </form>
+          <input type="submit" form="prewiew-form" value="Отправить заявку" />
+        </div>
+      </section>
       <section class="services">
         <h2>Наши услуги</h2>
         <div class="content-block">
-        <div class="block1">
-          <div class="row-block">
-          <img src="img/windows.svg" alt="logo">
-          <h3>Установка <br /> пластиковых окон</h3>
+          <div class="block1">
+            <div class="row-block">
+              <img src="img/windows.svg" alt="logo" />
+              <h3>Установка пластиковых окон</h3>
+            </div>
+            <p>
+              Устанавливаем пластиковые окна Rehau от&nbsp;проверенного
+              производителя с гарантией качества
+            </p>
           </div>
-          <p>Устанавливаем пластиковые окна <br />Rehau от проверенного производителя<br /> с гарантией качества</p>
-        </div>
-        <div class="block2">
-          <div class="row-block">
-            <img src="img/balcony.svg" alt="logo">
-            <h3>Остекление балконов <br /> и лоджий</h3>
+          <div class="block2">
+            <div class="row-block">
+              <img src="img/balcony.svg" alt="logo" />
+              <h3>Остекление балконов и лоджий</h3>
+            </div>
+            <p>
+              Занимаемся остеклением и отделкой балконов и лоджий. Теплое и
+              холодное остекление, изготовление выносов и крыш. Беремся за
+              сложные объекты
+            </p>
           </div>
-          <p>Занимаемся остеклением и отделкой<br /> балконов и лоджий. Теплое и холодное<br /> остекление, изготовление выносов и<br /> крыш. Беремся за сложные объекты</p>
-        </div>
-        <div class="block3">
-          <div class="row-block">
-            <img src="img/house.svg" alt="logo">
-            <h3>Остекление <br /> коттеджей и дач</h3>
+          <div class="block3">
+            <div class="row-block">
+              <img src="img/house.svg" alt="logo" />
+              <h3>Остекление коттеджей и дач</h3>
+            </div>
+            <p>
+              Остекление и отделка под ключ: от&nbsp;коттеджей&nbsp;и дач до
+              террас и беседок. Выделяем личного технолога под каждый объект
+            </p>
           </div>
-          <p>Остекление и отделка под ключ:<br /> от коттеджей и дач до террас<br /> и беседок. Выделяем личного<br /> технолога под каждый объект</p>
-        </div>
-        <div class="block4">
-          <div class="row-block">
-            <img src="img/office.svg" alt="logo">
-            <h3>Остекление <br /> корпоративных объектов</h3>
+          <div class="block4">
+            <div class="row-block">
+              <img src="img/office.svg" alt="logo" />
+              <h3>Остекление корпоративных&nbsp;объектов</h3>
+            </div>
+            <p>
+              Реализуем сложные проекты по остеклению торговых центров,
+              ресторанов, производственных и помещений офисов
+            </p>
           </div>
-          <p>Реализуем сложные проекты<br /> по остеклению торговых центров,<br /> ресторанов, производственных<br /> и помещений офисов</p>
         </div>
+      </section>
+      <section class="company">
+        <h2>О компании</h2>
+        <div class="company-block1">
+          <div class="company-menu">
+            <ul>
+              <li><a href="/" class="company-menu-activ">Описание</a></li>
+              <li><a href="/">Как мы работаем</a></li>
+              <li><a href="/">Отзывы</a></li>
+              <li><a href="/">Сертификаты</a></li>
+            </ul>
+          </div>
+          <div class="company-content">
+            <img src="img/logo.svg" alt="logo" id="logo" />
+            <div class="company-content-fe">
+              <p>
+                Мы помогаем клиентам подбирать решения, учитывая пожежелания к
+                характеристикам окна и его стоимости. Окно - это объект, которым
+                Вы будете пользоваться много лет, поэтому для нас очень важно,
+                чтобы Вы сделали правильный выбор.
+              </p>
+            </div>
+            <img src="img/company-windows-human.jpg" alt="img" />
+          </div>
+        </div>
+        <div class="company-block2">
+          <div class="company-advantages">
+            <div class="company-advantages-item">
+              <img src="img/profi.svg" alt="logo" />
+              <div class="advantages-block">
+                <h3>профессионализм</h3>
+                <p>
+                  Бригада профессиональных мастеров по монтажу и обслуживанию
+                </p>
+              </div>
+            </div>
+            <div class="company-advantages-item">
+              <img src="img/pricing.svg" alt="logo" />
+              <div class="advantages-block">
+                <h3>Ценообразование</h3>
+                <p>Лучшие цены на рынке пластиковых окон</p>
+              </div>
+            </div>
+            <div class="company-advantages-item">
+              <img src="img/contract.svg" alt="logo" />
+              <div class="advantages-block">
+                <h3>Мобильность</h3>
+                <p>Заключение договора на дому</p>
+              </div>
+            </div>
+            <div class="company-advantages-item">
+              <img src="img/loyalty.svg" alt="logo" />
+              <div class="advantages-block">
+                <h3>Лояльность</h3>
+                <p>99% клиентов рекомендуют нас своим друзьям</p>
+              </div>
+            </div>
+            <div class="company-advantages-item">
+              <img src="img/spid.svg" alt="logo" />
+              <div class="advantages-block">
+                <h3>Скорость</h3>
+                <p>Короткие сроки установки изделий</p>
+              </div>
+            </div>
+            <div class="company-advantages-item">
+              <img src="img/quality.svg" alt="logo" />
+              <div class="advantages-block">
+                <h3>Служба качества</h3>
+                <p>Безупречное качество и контроль изделий ПВХ</p>
+              </div>
+            </div>
+          </div>
+          <button id="btn">
+            <img src="img/liner.svg" alt="logo" />Оформить заявку на замер
+          </button>
+        </div>
+      </section>
+      <section class="portfolio">
+        <h2>Портфолио</h2>
+        <div class="portfolio-content">
+          <img src="img/img1.jpg" alt="photo" />
+          <img src="img/img2.jpg" alt="photo" />
+          <img src="img/img3.jpg" alt="photo" />
+          <img src="img/img4.jpg" alt="photo" />
+        </div>
+      </section>
+      <section class="QA">
+        <h2>Вопрос-ответ</h2>
+        <div class="details-block">
+          <details>
+            <summary>
+              Сколько по времени занимает изготовление пластиковых окон?
+            </summary>
+            <p>text1</p>
+          </details>
+          <details>
+            <summary>Какие существуют способы оплаты?</summary>
+            <p>text2</p>
+          </details>
+          <details>
+            <summary>Где я могу посмотреть образцы?</summary>
+            <p>text3</p>
+          </details>
+          <details>
+            <summary>Зачем вызывать замерщика? Я могу дать размеры</summary>
+            <p>text4</p>
+          </details>
+          <details>
+            <summary>Хотелось бы отделать балкон. Поможете?</summary>
+            <p>text5</p>
+          </details>
+          <details>
+            <summary>Мне надо нанимать грузчиков для подъема?</summary>
+            <p>Нет, команда мастеров все сами аккуратно доставят и внесут.</p>
+          </details>
         </div>
       </section>
     </main>
-    <footer></footer>
+    <footer>
+      <p>
+      <img src="img/logo.svg" alt="logo">
+      © ООО “Окна Хаус”, 2011 - 2022</p>
+      <p>
+        <a href="/">Политика кофиденциальности</a>
+        <a href="/">Пользовательское соглашение</a>
+      </p>
+    </footer>
   </body>
 </html>

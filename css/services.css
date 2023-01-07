@@ -9,15 +9,19 @@
 div[class^="block"] {
   display: flex;
   flex-wrap: wrap;
-  flex-direction: row;
 
   height: 268px;
   width: 595px;
+
+  font-size: 16px;
+  color: #2F2F51;
+
   
   box-shadow: inset 400px 0px 200px rgb(255, 255, 255), 0px 4px 10px rgba(0, 0, 0, 0.25);  
 }
 
 div[class^="block"] p {
+  max-width: 350px;
   margin-left: 50px;
 }
 .block1 {
@@ -42,6 +46,9 @@ div[class^="block"] p {
 .row-block {
   display: flex;
   align-items: center;
+}
+.row-block {
+  max-width: 400px;
 }
 .row-block img {
   margin: 0 20px 0 50px;

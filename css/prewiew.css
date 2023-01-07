@@ -1,0 +1,151 @@
+.prewiew {
+  width: 100%;
+  height: 562px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+
+  background: url(../img/bg-prewiew.png);
+}
+.noh {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  color: #ef7f04;
+}
+.about-block p {
+  font-size: 14px;
+  color: #ffffff;
+}
+.form {
+  width: 410px;
+  height: 440px;
+
+  background: #ffffff;
+
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  position: relative;
+}
+.form:before {
+  content: url(../img/form-liner.svg);
+  position: absolute;
+  bottom: -30px;
+  left: -90px;
+  width: 600px;
+  height: 110px;
+}
+.form input[type="submit"] {
+  margin-top: 25px;
+}
+#prewiew-form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 15px;
+}
+.form input[type="text"] {
+  width: 322px;
+  height: 40px;
+
+  padding-left: 16px;
+
+  background: #e2e2e2;
+  border-radius: 3px;
+}
+.form input[type="text"]::placeholder {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+
+  color: #424268;
+}
+.form input[type="submit"] {
+  width: 200px;
+  height: 55px;
+
+  background: #ef7f04;
+  color: #ffffff;
+  border-radius: 3px;
+}
+.form label {
+  font-size: 12px;
+
+  width: 287px;
+
+  color: #000000;
+}
+input[type="checkbox"]:checked,
+input[type="checkbox"]:not(:checked) {
+  display: none;
+}
+input[type="checkbox"]:checked + label,
+input[type="checkbox"]:not(:checked) + label {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+input[type="checkbox"]:checked + label:before,
+input[type="checkbox"]:not(:checked) + label:before {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: -35px;
+  width: 25px;
+  height: 25px;
+  border-radius: 3px;
+  background-color: #e2e2e2;
+}
+input[type="checkbox"]:checked + label:after {
+  content: url(../img/strelka.svg);
+  position: absolute;
+  top: 0px;
+  left: -30px;
+}
+input[type="checkbox"]:not(:checked) + label:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -30px;
+}
+.about {
+  display: flex;
+  flex-direction: column;
+}
+.about h1 {
+  font-size: 36px;
+  font-weight: 100;
+  line-height: 43px;
+
+  color: #ffffff;
+
+  margin-bottom: 20px;
+
+  width: 450px;
+}
+.about-block-1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-end;
+  gap: 50px;
+}
+.about-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.about-block img {
+  margin-bottom: 20px;
+  width: 100px;
+}
+.about-block p {
+  width: 180px;
+}
