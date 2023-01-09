@@ -5,7 +5,8 @@ body {
   flex-direction: column;
   align-items: center;
 
-  width: 1900px;
+  width: 100%;
+  max-width: 1920px;
 }
 h2 {
   font-style: normal;
@@ -32,8 +33,18 @@ p {
 }
 
 main {
-  display: flex;
-  justify-content: center;
+  width: 63%;
 }
 
 
+@media (min-width: 1020px) and (max-width: 1600px) {
+  main {
+    width: 100%;
+  }
+}
+
+@media (min-width: 1600px) and (max-width: 1920px) {
+  main {
+    width: 75%;
+  }
+}
