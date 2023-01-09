@@ -3,7 +3,7 @@
   flex-direction: column;
   align-items: center;
 
-  width: 64%;
+  width: 100%;
 }
 
 div[class^="block"] {
@@ -12,11 +12,62 @@ div[class^="block"] {
   flex-direction: row;
 
   height: 268px;
-  width: 595px;
+  width: 49.25%;
+
+  border-radius: 3px;
   
   box-shadow: inset 400px 0px 200px rgb(255, 255, 255), 0px 4px 10px rgba(0, 0, 0, 0.25);  
 }
 
+@media (min-width:1020px) and (max-width: 1280px) {
+div[class^="block"] {
+  width: 45.3vw;
+}
+
+  .content-block {
+    width: 91.62vw;
+  }
+}
+
+@media (min-width:1280px) and (max-width: 1600px) {
+div[class^="block"] {
+  width: 36.3vw;
+}
+
+  .content-block {
+    width: 73.62vw;
+  }
+}
+
+@media (min-width:1600px) and (max-width: 1700px) {
+div[class^="block"] {
+  width: 34.3vw;
+}
+
+  .content-block {
+    width: 69.62vw;
+  }
+}
+
+@media (min-width:1700px) and (max-width: 1800px) {
+div[class^="block"] {
+  width: 32.3vw;
+}
+
+  .content-block {
+    width: 65.62vw;
+  }
+}
+
+@media (min-width:1800px) and (max-width: 1920px) {
+div[class^="block"] {
+  width: 30.3vw;
+}
+
+  .content-block {
+    width: 61.62vw;
+  }
+}
 div[class^="block"] p {
   margin-left: 50px;
 }
@@ -36,8 +87,6 @@ div[class^="block"] p {
   display: flex;
   gap: 10px;
   flex-wrap: wrap;
-
-  width: 100%;
 }
 .row-block {
   display: flex;
