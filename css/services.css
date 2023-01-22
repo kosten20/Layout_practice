@@ -1,0 +1,76 @@
+.services {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  /*max-width: 1200px;*/
+  width: 100%;
+}
+
+.content__block {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+
+  height: 268px;
+  width: calc(50% - 5px);
+  max-width: 595px;
+
+  border-radius: 3px;
+}
+.content__header {
+  width: 300px;
+}
+.content__p {
+  width: 300px;
+  
+  color: #2F2F51;
+
+  margin-left: 50px;
+}
+
+
+.content__block_bg1 {
+  background: linear-gradient(
+      90.45deg,
+      #ffffff 47.56%,
+      rgba(255, 255, 255, 0) 98.81%
+    ),
+    url(../img/windows.jpg) no-repeat;
+}
+.content__block_bg2 {
+  background: linear-gradient(
+      90.45deg,
+      #ffffff 47.56%,
+      rgba(255, 255, 255, 0) 98.81%
+    ),
+    url(../img/houme.jpg) no-repeat;
+}
+.content__block_bg3 {
+  background: linear-gradient(
+      90.45deg,
+      #ffffff 47.56%,
+      rgba(255, 255, 255, 0) 98.81%
+    ),
+    url(../img/balcony.jpg) no-repeat;
+}
+.content__block_bg4 {
+  background: linear-gradient(
+      90.45deg,
+      #ffffff 47.56%,
+      rgba(255, 255, 255, 0) 98.81%
+    ),
+    url(../img/office.jpg) no-repeat;
+}
+.content {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.content__row-block {
+  display: flex;
+  align-items: center;
+}
+.content__icon {
+  margin: 0 20px 0 50px;
+}
