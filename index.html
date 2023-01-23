@@ -7,7 +7,8 @@
     <link rel="stylesheet" href="css/header.css" media="all" />
     <link rel="stylesheet" href="css/services.css" media="all" />
     <link rel="stylesheet" href="css/style.css" media="all" />
-    <link rel="stylesheet" href="css/about.css" media="all">
+    <link rel="stylesheet" href="css/about.css" media="all" />
+    <link rel="stylesheet" href="css/prewiew.css" media="all" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -16,16 +17,25 @@
     />
   </head>
   <body class="body">
-    <header class="header">
+    <header class="header header_margin">
       <div class="header__container">
-        <img src="img/logo.svg" alt="" />
-        <nav class="_nav">
+        <div class="wrapper-navigation wrapper-navigation_margin">
+          <div class="navigation-button">
+            <input id="menu__toggle" type="checkbox" />
+            <label class="navigation-button__btn" for="menu__toggle">
+              <span></span>
+            </label>
+          </div>
+          <img src="img/logo.svg" alt="" class="header__icon"/>
+        </div>
+        <nav class="navigation-block navigation-block_margin">
           <ul class="nav-list nav-list_gap">
             <li class="nav-list__item">
               <a href="/" class="nav-list__link">Услуги</a>
             </li>
             <li class="nav-list__item">
-              <a href="/" class="nav-list__link nav-list__link_active">Продукция</a>
+              <a href="/" class="nav-list__link nav-list__link_active"
+                >Продукция</a>
             </li>
             <li class="nav-list__item">
               <a href="/" class="nav-list__link">О компании</a>
@@ -41,19 +51,99 @@
             </li>
           </ul>
         </nav>
-        <div class="btn">
+        <div class="btn btn_margin">
           <button class="btn__item">
-            <img src="img/liner.svg" alt="logo" class="btn__icon_margin" />Заявка на
-            замер
+            <img
+              src="img/liner.svg"
+              alt="logo"
+              class="btn__icon_margin"
+            />Заявка на замер
           </button>
           <button class="btn__item">
-            <img src="img/calc.svg" alt="logo" class="btn__icon_margin" />Заказать
-            расчет
+            <img
+              src="img/calc.svg"
+              alt="logo"
+              class="btn__icon_margin"
+            />Заказать расчет
           </button>
         </div>
       </div>
     </header>
     <main class="main">
+      <section class="prewiew">
+        <div class="prewiew__about prewiew__about_margin">
+          <h1 class="head prewiew__header prewiew__header_margin">
+            <span class="prewiew__header_highlighting">Окна Хаус -</span>
+            Профессиональный&nbsp;подход к остеклению
+          </h1>
+          <div class="wrapper-flex">
+            <div class="wraper-flex__block">
+              <img
+                src="img/prewiew-windows.svg"
+                alt="logo"
+                class="wrapper-flex__icon"
+              />
+              <p class="p wrapper-flex__description">
+                Современные окна и балконные конструкции по доступным ценам
+              </p>
+            </div>
+            <div class="wrapper-flex__block">
+              <img
+                src="img/prewiew-hands.svg"
+                alt="logo"
+                class="wrapper-flex__icon"
+              />
+              <p class="p wrapper-flex__description">
+                Квалифицированный подход к решению задач любой сложности
+              </p>
+            </div>
+            <div class="wrapper-flex__block">
+              <img
+                src="img/prewiew-list.svg"
+                alt="logo"
+                class="wrapper-flex__icon"
+              />
+              <p class="p wrapper-flex__description">
+                Гарантия высочайшего качества нашей продукции
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="form">
+          <h2 class="head form__header form__header_margin">Вызвать замершика на дом</h2>
+          <form action="/" class="form__block" id="form__block">
+            <input
+              type="text"
+              placeholder="Представьтесь, пожалуйста"
+              class="form__item-text"
+            />
+            <input
+              type="text"
+              placeholder="Номер телефона"
+              class="form__item-text"
+            />
+            <input type="text" placeholder="E-mail" class="form__item-text" />
+            <input
+              id="form-check"
+              type="checkbox"
+              name=""
+              class="form__custom-checkbox"
+            />
+            <label for="form-check" >
+              <p class="p form__p">
+              Согласен на обработку персональных данных в&nbsp;соответствии с
+              <a href="/">политикой конфиденциальности</a>
+              </p>
+            </label>
+          </form>
+          <input
+            type="submit"
+            form="form__block"
+            value="Отправить заявку"
+            class="form-submit form-submit_margin"
+          />
+        </div>
+      </section>
       <section class="services">
         <h2 class="head head_margin">Наши услуги</h2>
         <div class="content">
@@ -109,9 +199,9 @@
           <div class="nav nav_margin">
             <ul class="nav__list_gap nav-list">
               <button class="nav__item nav__item_active">Описание</button>
-               <button class="nav__item">Как мы работаем</button>
-               <button class="nav__item">Отзывы</button>
-               <button class="nav__item">Сертификат</button>
+              <button class="nav__item">Как мы работаем</button>
+              <button class="nav__item">Отзывы</button>
+              <button class="nav__item">Сертификат</button>
             </ul>
           </div>
           <div class="slide">
@@ -124,58 +214,85 @@
                 чтобы Вы сделали правильный выбор.
               </p>
             </div>
-            <img src="img/company-windows-human.jpg" alt="img" class="slide__img-2"/>
+            <img
+              src="img/company-windows-human.jpg"
+              alt="img"
+              class="slide__img-2"
+            />
           </div>
         </div>
         <div class="about__block about__block_margin">
           <div class="advantages">
             <div class="advantages__item">
-              <img src="img/profi.svg" alt="logo" class="advantages__icon"/>
+              <img src="img/profi.svg" alt="logo" class="advantages__icon" />
               <div class="advantages_column">
-                <h3 class="advantages__header advantages__header_margin head">профессионализм</h3>
+                <h3 class="advantages__header advantages__header_margin head">
+                  профессионализм
+                </h3>
                 <p class="advantages__description">
                   Бригада профессиональных мастеров по монтажу и обслуживанию
                 </p>
               </div>
             </div>
             <div class="advantages__item">
-              <img src="img/pricing.svg" alt="logo" class="advantages__icon"/>
+              <img src="img/pricing.svg" alt="logo" class="advantages__icon" />
               <div class="advantages_column">
-                <h3 class="advantages__header advantages__header_margin head">Ценообразование</h3>
-                <p class="advantages__description">Лучшие цены на рынке пластиковых окон</p>
+                <h3 class="advantages__header advantages__header_margin head">
+                  Ценообразование
+                </h3>
+                <p class="advantages__description">
+                  Лучшие цены на рынке пластиковых окон
+                </p>
               </div>
             </div>
             <div class="advantages__item">
-              <img src="img/contract.svg" alt="logo" class="advantages__icon"/>
+              <img src="img/contract.svg" alt="logo" class="advantages__icon" />
               <div class="advantages_column">
-                <h3 class="advantages__header advantages__header_margin head">Мобильность</h3>
-                <p class="advantages__description">Заключение договора на дому</p>
+                <h3 class="advantages__header advantages__header_margin head">
+                  Мобильность
+                </h3>
+                <p class="advantages__description">
+                  Заключение договора на дому
+                </p>
               </div>
             </div>
             <div class="advantages__item">
-              <img src="img/loyalty.svg" alt="logo" class="advantages__icon"/>
+              <img src="img/loyalty.svg" alt="logo" class="advantages__icon" />
               <div class="advantages_column">
-                <h3 class="advantages__header advantages__header_margin head">Лояльность</h3>
-                <p class="advantages__description">99% клиентов рекомендуют нас своим друзьям</p>
+                <h3 class="advantages__header advantages__header_margin head">
+                  Лояльность
+                </h3>
+                <p class="advantages__description">
+                  99% клиентов рекомендуют нас своим друзьям
+                </p>
               </div>
             </div>
             <div class="advantages__item">
-              <img src="img/spid.svg" alt="logo" class="advantages__icon"/>
+              <img src="img/spid.svg" alt="logo" class="advantages__icon" />
               <div class="advantages_column">
-                <h3 class="advantages__header advantages__header_margin head">Скорость</h3>
-                <p class="advantages__description">Короткие сроки установки изделий</p>
+                <h3 class="advantages__header advantages__header_margin head">
+                  Скорость
+                </h3>
+                <p class="advantages__description">
+                  Короткие сроки установки изделий
+                </p>
               </div>
             </div>
             <div class="advantages__item">
-              <img src="img/quality.svg" alt="logo" class="advantages__icon"/>
+              <img src="img/quality.svg" alt="logo" class="advantages__icon" />
               <div class="advantages_column">
-                <h3 class="advantages__header advantages__header_margin head">Служба качества</h3>
-                <p class="advantages__description">Безупречное качество и контроль изделий ПВХ</p>
+                <h3 class="advantages__header advantages__header_margin head">
+                  Служба качества
+                </h3>
+                <p class="advantages__description">
+                  Безупречное качество и контроль изделий ПВХ
+                </p>
               </div>
             </div>
           </div>
           <button class="about__btn">
-            <img src="img/liner.svg" alt="logo" class="btn__icon"/>Оформить заявку на замер
+            <img src="img/liner.svg" alt="logo" class="btn__icon" />Оформить
+            заявку на замер
           </button>
         </div>
       </section>
