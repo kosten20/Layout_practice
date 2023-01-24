@@ -94,12 +94,6 @@
 .navigation-block_margin {
   margin: 0 0.5vw;
 }
-.nav-list {
-  display: flex;
-  align-items: center;
-
-  list-style: none;
-}
 .nav-list_gap {
   gap: 1.5vw;
 }
