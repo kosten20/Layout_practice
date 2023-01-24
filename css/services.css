@@ -3,8 +3,8 @@
   flex-direction: column;
   align-items: center;
 
-  /*max-width: 1200px;*/
-  width: 100%;
+  max-width: 1200px;
+  width: 100vw;
 }
 
 .content__block {
@@ -17,6 +17,9 @@
   max-width: 595px;
 
   border-radius: 3px;
+}
+.content__block:hover {
+  box-shadow: 0 4px 10px #BCBCD3;
 }
 .content__header {
   width: 300px;

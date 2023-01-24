@@ -2,12 +2,12 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  width: 100vw;
+  max-width: 1200px;
 }
 .about__header_margin {
   margin-top: 60px;
-}
-.company-block {
-  flex-direction: column;
 }
 .nav_margin {
   margin-bottom: 35px;
@@ -46,32 +46,35 @@
   align-items: flex-start;
   justify-content: space-between;
 
-  width: 100%;
+  width: 100vw;
+  max-width: 1200px;
+  height: 461px;
 }
-.slide__left-block {
-  width: 50vw;
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+
   height: 100%;
 }
-.slide__img {
-  max-width: 30vw;
-
-  padding: 2.6vw 0 0 2.6vw;
-}
-.slide__img-2 {
-  width: 30vw;
-}
-.slide_row {
-  display: flex;
-  justify-content: flex-end;
-
+.wrapper-img {
   width: 100%;
 }
+.wrapper-description {
+  width: 100%;
 
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+
+  margin: 0 50px 50px 0
+}
+.slide__img {
+  width: 200px;
+
+  margin: 46px 0 0 50px;
+}
 .slide__description {
-  min-width: 16vw;
-  max-width: 40vw;
-
-  /*padding:  2.7vw 3.2vw 0;*/
+  width: 310px;
 }
 .about__block {
   display: flex;
@@ -109,7 +112,11 @@
   flex-wrap: wrap;
   gap: 70px;
 }
-
+@media (max-width: 1200px) {
+  .advantages {
+    width: 1000px;  
+  }
+}
 .advantages__item {
   display: flex;
   align-items: center;

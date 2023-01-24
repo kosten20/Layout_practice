@@ -85,7 +85,7 @@
 }
 }
 .header {
-  width: 100%;
+  width: 100vw;
   max-width: 1200px;
 }
 .header_margin {
@@ -95,6 +95,8 @@
   margin: 0 0.5vw;
 }
 .nav-list_gap {
+  display: flex;
+
   gap: 1.5vw;
 }
 .nav-list__item {

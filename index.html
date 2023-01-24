@@ -26,7 +26,9 @@
               <span></span>
             </label>
           </div>
-          <img src="img/logo.svg" alt="" class="header__icon" />
+          <a href="/">
+            <img src="img/logo.svg" alt="logo" class="header__icon" />
+          </a>
         </div>
         <nav class="navigation-block navigation-block_margin">
           <ul class="nav-list nav-list_gap">
@@ -208,9 +210,11 @@
             </ul>
           </div>
           <div class="slide">
-            <div class="slide__left-block">
-              <img src="img/logo.svg" alt="logo" class="slide__img" />
-              <div class="slide_row">
+            <div class="wrapper">
+              <div class="wrapper-img">
+                <img src="img/logo.svg" alt="logo" class="slide__img" />
+              </div>
+              <div class="wrapper-description">
                 <p class="slide__description">
                   Мы помогаем клиентам подбирать решения, учитывая пожежелания к
                   характеристикам окна и его стоимости. Окно - это объект,
@@ -220,9 +224,13 @@
               </div>
             </div>
             <img
-              src="img/company-windows-human.jpg"
+              srcset="
+                img/company-windows-human.jpg        595w,
+                img/company-windows-human-tablet.jpg 447w
+              "
+              sizes="(min-width: 1200px) 595px,
+                    (max-width: 1200px) 447px"
               alt="img"
-              class="slide__img-2"
             />
           </div>
         </div>
